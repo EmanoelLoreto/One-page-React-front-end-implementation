@@ -1,0 +1,251 @@
+.container {
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  transition: all 1s ease;
+}
+
+.containerPicture {
+  position: relative;
+  flex: 1;
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 61px;
+  text-align: center;
+  letter-spacing: 0.0002em;
+  margin: 0;
+  
+  width: 100%;
+
+  color: #FFFFFF;
+}
+
+.titleBold {
+  font-weight: 800;
+  margin: 0;
+}
+
+.backgroundSauverTravail {
+  width: 100%;
+  height: 100%;
+}
+
+.artShortlistBottom {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.containerInformation {
+  flex: 1;
+}
+
+.containerInformationForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+  height: 90%;
+
+  background: #F8F9FA;
+}
+
+.containerImportant {
+  width: 80%;
+}
+
+.informationForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px;
+  gap: 32px;
+
+  background: #FFFFFF;
+  border-left: 6px solid #506487;
+  box-shadow: 0px 2px 0px rgba(233, 233, 233, 0.2);
+}
+
+.infoCircleAndTitle {
+  display: flex;
+  padding: 10px;
+}
+
+.titleImportant {
+  margin-left: 10px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.0002em;
+
+  color: #979EA4;
+}
+
+.descriptionForm {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 19px;
+
+  color: #313F62;
+}
+
+.bottomInformationForm {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 22px;
+  color: #313F62;
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+.containerActionBottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10%;
+  background: #FFFFFF;
+}
+
+.containerArrow {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.textArrow {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.0002em;
+  text-transform: uppercase;
+  margin-top: 1px;
+  margin-left: 10px;
+
+  color: #313F62;
+}
+
+.sendWork {
+  cursor: pointer;
+  padding: 16px 24px;
+  gap: 8px;
+
+  height: 51px;
+
+  background: #C9E3F7;
+  border-radius: 8px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.0002em;
+  border: none;
+
+  color: #313F62;
+}
+
+.titleMobile {
+  display: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 61px;
+  text-align: center;
+  letter-spacing: 0.0002em;
+  margin: 0;
+  
+  width: 100%;
+
+  color: #FFFFFF;
+}
+
+/* Responsivity */
+@media (max-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (max-width:1281px) { /* hi-res laptops and desktops */ }
+@media (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (max-width:961px)  { 
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .titleImportant {
+    font-size: 1rem;
+  }
+
+  .descriptionForm {
+    font-size: 0.9rem;
+  }
+
+  .bottomInformationForm {
+    font-size: 0.9rem;
+  }
+
+  .textArrow {
+    font-size: 1rem;
+  }
+
+  .sendWork {
+    font-size: 1rem;
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (max-width:750px)  {
+  .container {
+    overflow: auto;
+  }
+
+  .containerPicture {
+    display: none;
+  }
+
+  .titleMobile {
+    display: block;
+    position: relative;
+    color: #313F62;
+    font-size: 2.4rem;
+    line-height: 50px;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (max-width:481px)  { 
+  .textArrow {
+    font-size: 0.8rem;
+  }
+
+  .sendWork {
+    font-size: 0.8rem;
+  }
+  
+  .containerInformationForm {
+    height: auto;
+  }
+}
